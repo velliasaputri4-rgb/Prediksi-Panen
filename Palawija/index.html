@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediksi Panen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Prediksi Masa Panen Tanaman Palawija</h1>
+  <form id="panenForm">
+    <label for="tanaman">Pilih Tanaman:</label>
+    <select id="tanaman" required>
+      <option value="">-- Pilih --</option>
+      <option value="jagung">Jagung</option>
+      <option value="kedelai">Kedelai</option>
+      <option value="kacang tanah">Kacang Tanah</option>
+      <option value="kacang hijau">Kacang Hijau</option>
+      <option value="kacang panjang">Kacang Panjang</option>
+      <option value="ubi jalar">Ubi Jalar</option>
+      <option value="singkong">Singkong</option>
+      <option value="talas">Talas</option>
+      <option value="kentang">Kentang</option>
+      <option value="cabai merah">Cabai Merah</option>
+      <option value="cabai rawit">Cabai Rawit</option>
+      <option value="tomat">Tomat</option>
+      <option value="bawang merah">Bawang Merah</option>
+      <option value="bawang putih">Bawang Putih</option>
+      <option value="wortel">Wortel</option>
+      <option value="sawi">Sawi</option>
+      <option value="bayam">Bayam</option>
+      <option value="kangkung">Kangkung</option>
+      <option value="tembakau">Tembakau</option>
+      <option value="kapas">Kapas</option>
+      <option value="jahe">Jahe</option>
+      <option value="kunyit">Kunyit</option>
+      <option value="lengkuas">Lengkuas</option>
+      <option value="mentimun">Mentimun</option>
+      <option value="labu">Labu</option>
+      <option value="oyong">Oyong</option>
+      <option value="pare">Pare</option>
+      <option value="gembili">Gembili</option>
+      <option value="sorgum">Sorgum</option>
+      <option value="jewawut">Jewawut</option>
+    </select>
+
+    <label for="tanggalTanam">Tanggal Tanam:</label>
+    <input type="date" id="tanggalTanam" required>
+
+    <label for="kondisiCuaca">Kondisi Cuaca Selama Pertumbuhan:</label>
+    <select id="kondisiCuaca" required>
+      <option value="">-- Pilih Cuaca --</option>
+      <option value="cerah">Cerah</option>
+      <option value="berawan">Berawan</option>
+      <option value="hujan">Hujan</option>
+      <option value="kering">Kering / Kemarau</option>
+    </select>
+
+    <button type="submit">Prediksi Panen</button>
+  </form>
+
+  <div id="hasilPanen" class="hasil"></div>
+  <div id="deteksiMasalah" class="analisis"></div>
+
+  <!-- Hubungkan file JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
